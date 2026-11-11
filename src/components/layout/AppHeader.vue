@@ -24,8 +24,7 @@ function submit() {
   <header class="bg-ink text-white">
     <div class="mx-auto max-w-7xl px-4 py-5 md:px-6">
       <div class="border-b border-white/15 pb-4">
-        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-glacier-bright">Project</p>
-        <h1 class="mt-1 text-xl font-bold tracking-tight md:text-2xl">
+        <h1 class="text-xl font-bold tracking-tight md:text-2xl">
           Supply Chain Management - TraceChain
         </h1>
         <div class="mt-2 flex flex-col gap-1 text-sm text-white/70 sm:flex-row sm:gap-5">
@@ -34,14 +33,10 @@ function submit() {
         </div>
       </div>
 
-      <div class="mt-5 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-        <div>
-          <h2 class="text-2xl font-bold tracking-tight">Cold-Chain Ledger Audit</h2>
-          <p class="mt-1 text-sm text-white/70">
-            ESP32 sensor → AWS Lambda → Pinata IPFS → Sepolia, verified end to end.
-          </p>
-        </div>
-
+      <div class="mt-5 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <p class="text-sm text-white/70">
+          ESP32 sensor → AWS Lambda → Pinata IPFS → Sepolia, verified end to end.
+        </p>
         <form class="flex w-full gap-2 md:w-auto" role="search" @submit.prevent="submit">
           <label for="container-id" class="sr-only">Container ID</label>
           <input
